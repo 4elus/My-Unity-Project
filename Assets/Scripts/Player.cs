@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public Transform spawnPoint;
     public bool isJump = false;
     private Animator animator;
+    private SpriteRenderer spr;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +27,9 @@ public class Player : MonoBehaviour
         Debug.Log( name(2, 3));
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
+        spr = GetComponent<SpriteRenderer>();
 
-// Debug.Log(string.Join("," , gameObjects.ToString()));
+        // Debug.Log(string.Join("," , gameObjects.ToString()));
 
         //Vector2 position = spawnPoint != null ? spawnPoint.position : transform.position;
         //Quaternion rotation = spawnPoint != null ? spawnPoint.rotation : transform.rotation;
@@ -58,12 +61,14 @@ public class Player : MonoBehaviour
         {
             transform.Translate(Vector2.left * Time.deltaTime * speed);
             //animator.SetInteger("State", 1);
+            spr.flipX = true;
         }
 
         else if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector2.right * Time.deltaTime * speed);
             //animator.SetInteger("State", 1);
+            spr.flipX = false;
         }
         else
         {
