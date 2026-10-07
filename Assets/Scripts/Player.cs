@@ -20,6 +20,9 @@ public class Player : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spr;
 
+    private bool isHurt = false;
+    public float knockbackForce = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,10 +73,7 @@ public class Player : MonoBehaviour
             //animator.SetInteger("State", 1);
             spr.flipX = false;
         }
-        else
-        {
-            //animator.SetInteger("State", 0);
-        }
+      
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -93,11 +93,19 @@ public class Player : MonoBehaviour
             isJump = false;
         }
 
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && !isHurt)
         {
+            isHurt= true;
             collision.gameObject.GetComponent<Health>().takeHit(20);
             Debug.Log("Enemy hit! Remaining health: " + 
                 collision.gameObject.GetComponent<Health>().health);
+
+            // Apply knockback force to the player
+            float direction = transform.position.x -  collision.transform.position.x;
+            direction = Mathf.Sign(direction); // Get the direction of knockback
+            rigidbody.linearVelocity = Vector2.zero; // Reset current velocity
+
+            rigidbody.AddForce(new Vector2(direction * knockbackForce, 4f), ForceMode2D.Impulse);
         }
     }
 

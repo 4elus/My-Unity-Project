@@ -21,11 +21,12 @@ public class PatrolEnemy : MonoBehaviour
 
         if (targetPoint.position.x > transform.position.x)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else if (targetPoint.position.x < transform.position.x)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            
+            transform.localScale = new Vector3(1, 1, 1);
         }
 
         if (Vector2.Distance(transform.position, targetPoint.position) < 0.1f)
