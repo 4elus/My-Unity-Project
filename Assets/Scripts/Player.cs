@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
 
     public float speed = 5;
     Rigidbody2D rigidbody;
-    int[] numbers = new int[5] {9, 11, -2, 3, 14};
 
     public GameObject[] gameObjects = new GameObject[3];
     public Transform spawnPoint;
@@ -80,11 +79,29 @@ public class Player : MonoBehaviour
             if (!isJump)
             {
                 isJump = true;
-                rigidbody.AddForce(Vector2.up * 7, ForceMode2D.Impulse);
+                rigidbody.AddForce(Vector2.up * 8, ForceMode2D.Impulse);
             }
            
         }
     }
+
+
+
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground"))
+    //    {
+    //        isJump = false;
+    //    }
+
+    //    if (collision.gameObject.CompareTag("Enemy") && !isHurt)
+    //    {
+    //        //isHurt= true;
+    //        collision.gameObject.GetComponent<Health>().takeHit(20);
+    //        Debug.Log("Enemy hit! Remaining health: " +
+    //            collision.gameObject.GetComponent<Health>().health);
+    //    }
+    // }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -95,15 +112,15 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy") && !isHurt)
         {
-            isHurt= true;
+            //isHurt= true;
             collision.gameObject.GetComponent<Health>().takeHit(20);
             Debug.Log("Enemy hit! Remaining health: " + 
                 collision.gameObject.GetComponent<Health>().health);
 
-            // Apply knockback force to the player
-            float direction = transform.position.x -  collision.transform.position.x;
+            //// Apply knockback force to the player
+            float direction = transform.position.x - collision.transform.position.x;
             direction = Mathf.Sign(direction); // Get the direction of knockback
-            rigidbody.linearVelocity = Vector2.zero; // Reset current velocity
+            rigidbody.linearVelocity = Vector2.zero; // Reset the player's velocity before applying knockback
 
             rigidbody.AddForce(new Vector2(direction * knockbackForce, 4f), ForceMode2D.Impulse);
         }

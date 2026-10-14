@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|c:\\unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\my project (23)\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|c:\\unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\my project (23)\\assets\\scripts\\patrolenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\patrolenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\assets\\scripts\\patrolenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69DC7867-2B09-CC80-3C2E-C0235FBC762A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\patrolenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,27 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Health.cs",
               "DocumentMoniker": "C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\Assets\\Scripts\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
               "ToolTip": "C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\Assets\\Scripts\\Health.cs",
               "RelativeToolTip": "Assets\\Scripts\\Health.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAiwAYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T07:16:47.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PatrolEnemy.cs",
               "DocumentMoniker": "C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\Assets\\Scripts\\PatrolEnemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PatrolEnemy.cs",
               "ToolTip": "C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\Assets\\Scripts\\PatrolEnemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\PatrolEnemy.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAkwC0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T07:53:43.113Z"
+              "WhenOpened": "2026-09-14T07:53:43.113Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,7 +61,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
               "ToolTip": "C:\\Unity \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\My project (23)\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAswDUAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-07T07:25:05.887Z",
               "EditorCaption": ""
